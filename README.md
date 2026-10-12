@@ -4,7 +4,7 @@ This lab introduces you to a new data structure: graphs. Graphs are a fundamenta
 
 **Instructions:** To complete this lab, you may work in groups, but you must write your solutions yourself. Complete all of the exercises below. Once you have completed the lab, push your changes to your forked repository.
 
-Your name: ___________________________
+Your name: __________Francesca Hoh_________________
 
 ## Introduction to Graphs
 
@@ -23,11 +23,11 @@ For the following graph, list the vertices and edges. What is the size of the gr
 
 ![ex1](images/ex1.png)
 
-- **Vertices**: 
+- **Vertices**: 5
 
-- **Edges**: 
+- **Edges**: e = 5
 
-- **Size**:
+- **Size**: 5,5
 
 
 ## Paths and Distances
@@ -45,26 +45,26 @@ The graph below shows the state of the internet in 1970s. Vertices represent com
 
 1. Find a path from RAND to SRI. What is the distance between these two vertices?
 
-- **Path**:
+- **Path**:RAND, UCLA, SRI
 
-- **Distance**:
+- **Distance**: 3
 
 2. Find a path from RAND to MIT. What is the distance between these two vertices?
 
-- **Path**:
+- **Path**: Rand, BBN, MIT
 
-- **Distance**:
+- **Distance**: 3
 
 3. Classify each of the following paths as simple, not simple, or a cycle. State your reasoning!
 
 - **Path 1**: LINC, MIT, LINC, CASE
-- **Classification**:
+- **Classification**: not simple. The path backtracks and hits LINC twice.
 
 - **Path 2**: UCSB, SRI, STAN, UCLA, UCSB
-- **Classification**:
+- **Classification**: Cycle. Starts at UCSB and circles around to UCSB to end.
 
 - **Path 3**: UCSB, SRI, UTAH
-- **Classification**:
+- **Classification**: simple. All values are only hit once.
 
 ## Connectivity and Trees
 
@@ -76,7 +76,8 @@ The graph below shows the state of the internet in 1970s. Vertices represent com
 Think through these with your partner(s) before answering the questions below. If you get stuck, try drawing a few graphs to help you visualize the problem.
 
 1. A connected graph is defined as a graph with paths between every pair of vertices. If a graph with 10 vertices has exactly 8 edges, is it possible for the graph to be connected? Explain your reasoning based on the minimum number of edges required to link all vertices.
-
+No. At min it would have to be 9. There wouldn't be enough edges to connect all vertices
 
 
 2. A tree is a connected graph with no cycles. If you take an existing tree and add exactly one new edge between two non-adjacent vertices, what structural property is immediately violated?
+It becomes a cycle instead, defeating the whole point of this all.
